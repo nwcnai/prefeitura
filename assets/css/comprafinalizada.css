@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: lightblue;
+    color: black;
+  }
+
+:root {
+    --extremos: white;
+    --body: #ececec;
+    --titulos: #596179;
+    --azul: #63aaea;
+    --subtitulos: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--body);
+}
+
+.containerprinc {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 28vh;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: green;
+    margin: 10px;
+}
+
+.confiraemail {
+    margin-top: 15px;
+}
+
+.confiraemail p {
+    color: var(--subtitulos);
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+
+    background-color: #4CAF50;
+    color: #fff;
+
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #439b47;
+}
+
+#voltaraloja {
+    background-color: rgb(255, 61, 61);
+    width: 106px;
+}
+
+#voltaraloja:hover {
+    background-color: rgb(211, 2, 2);
+}
+
+footer {
+    margin-top: 70px;
+    background-color: var(--extremos);
+    box-shadow: 0px -1px 7px #000000c0;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    
+    color: var(--titulos);
+}

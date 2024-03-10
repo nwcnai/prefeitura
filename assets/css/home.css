@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: lightblue;
+    color: black;
+  }
+
+:root {
+    --extremos: white;
+    --body: #ececec;
+    --titulos: #596179;
+    --azul-logo: #63aaea;
+    --subtitulos: #555;
+}
+
+/* configurando o background do site */
+body {
+    background-color: var(--body);
+}
+
+/* configurando - header */
+header {
+    background-color: var(--extremos);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 0px 7px #000000c0;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-div-logo img:hover {
+    cursor: pointer;
+}
+
+.nav-princ {
+    margin: 20px;
+}
+
+.imgprefeitura {
+    margin-left: 20px;
+}
+
+nav a {
+    transition: all 0.7s;
+
+    font-size: 18px;
+    text-decoration: none;
+    padding: 13px;
+    color: var(--azul-logo);
+    margin: 10px;
+}
+
+nav a:hover {
+    transition: all 0.3s;
+
+    cursor: pointer;
+    color: var(--titulos);
+}
+
+.header-div-logo, .header-div-search {
+    margin: 20px 25px;
+}
+
+.header-div-search input[type="search"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid var(--extremos);
+    border-radius: 4px;
+    background-color: var(--body);
+    color: var(--titulos);
+}
+
+.header-div-search button[type="submit"] {
+    cursor: pointer;
+
+    background-color: var(--azul-logo);
+    color: var(--extremos);
+    padding: 8px 16px;
+
+    border: none;
+    border-radius: 4px;
+}
+
+.header-div-search input[type="search"]:focus {
+    border-color: var(--azul-logo);
+    outline: none;
+    box-shadow: 0 0 4px #63aaea80;
+}
+
+/* configurando - notícias */
+h3 {
+    color: var(--titulos);
+    text-align: center;
+    font-size: 22px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.noticias {
+    margin-top: 180px;
+    /* top do header é fixo, por isso a margin na sessão notícias */
+}
+
+.container-noticias, .container-eventos {
+    background-color: var(--extremos);
+    color: var(--subtitulos);
+    width: 278px;
+    text-align: center;
+}
+
+.container-noticias {
+    height: 295px;
+}
+
+.container-eventos {
+    height: 325px;
+}
+
+.div-noticias, .div-eventos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px 50px;
+    gap: 31px;
+}
+
+.img-noticia1, .img-noticia2, .img-noticia3, .img-noticia4, .img-eventos1, .img-eventos2, .img-eventos3, .img-eventos4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 278px;
+    height: 210px;
+    transition: all 0.6s;
+}
+
+.img-eventos1, .img-eventos2, .img-eventos3, .img-eventos4 {
+    cursor: pointer;
+}
+
+
+.img-noticia1 {
+    background-image: url(../img/noticia1.jpg);
+}
+
+.img-noticia2 {
+    background-image: url(../img/noticia2.jpg);
+}
+
+.img-noticia3 {
+    background-image: url(../img/noticia3.jpg);
+}
+
+.img-noticia4 {
+    background-image: url(../img/noticia4.jpg);
+}
+
+.noticias p, .eventos p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+
+    color: var(--subtitulos);
+}
+
+.noticias p {
+    margin-top: 14px;
+}
+
+.eventos p {
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+/* configurando - eventos */
+.eventos {
+    margin-top: 75px;
+}
+
+.img-eventos1 {
+    background-image: url(../img/eventos1.jpg);
+}
+
+.img-eventos1:hover {
+    background-image: url(../img/eventos1hover.jpg);
+}
+
+.img-eventos2 {
+    background-image: url(../img/eventos2.jpg);
+}
+
+.img-eventos2:hover {
+    background-image: url(../img/eventos2hover.jpg);
+}
+
+.img-eventos3 {
+    background-image: url(../img/eventos3.jpg);
+}
+
+.img-eventos3:hover {
+    background-image: url(../img/eventos3hover.jpg);
+}
+
+.img-eventos4 {
+    background-image: url(../img/novouniforme.jpg);
+    background-position-y: -55px;
+}
+
+.img-eventos4:hover {
+    background-image: url(../img/eventos4hover.jpg);
+    background-position-y: 0px
+}
+
+.eventos-saibamais {
+    background-color: #4285f4;
+    padding: 8px 22px;
+
+    border: none;
+    border-radius: 4px;
+    color: var(--body);
+}
+  
+  .eventos-saibamais:hover {
+    cursor: pointer;
+    background-color: #3367d6;
+  }
+
+/* configurando - footer */
+footer {
+    margin-top: 70px;
+    background-color: var(--extremos);
+    box-shadow: 0px -1px 7px #000000c0;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.govsp-footer {
+    justify-self: flex-start;
+}
+
+.space-div-footer {
+    text-align: center;
+    justify-self: center;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    
+    color: var(--titulos);
+}
+
+.redesfooter {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redesfooter i {
+    transition: all 0.2s;
+
+    font-size: 28px;
+    color: var(--azul-logo);
+
+}
+
+.redesfooter i:hover {
+    transition: all 0.4s;
+    color: black;
+}
+
+.comprarbutton {
+    transition: all 0.3s;
+    background-color: #4CAF50;
+    color: #fff;
+
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+}
+  
+  .comprarbutton:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+
+    background-color: #439b47;
+  }
+
+.eventos-saibamais, .comprarbutton {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+.a-penapolense {
+    color: rgb(131, 131, 131);
+}
+
+.a-penapolense:hover {
+    color: black;
+}

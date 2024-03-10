@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura - Penápolis</title>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@650&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header junto de navegações -->
+    <header>
+        <div class="header-div-logo">
+            <a href="index.html">
+                <img src="assets/img/prefeitura.png" alt="brasão prefeitura" class="imgprefeitura"></a>
+        </div>
+
+        <div class="header-div-nav">
+            <nav class="nav-princ">
+                <a href="administracao.html">Administração</a>
+                <a href="planejamento.html">Planejamento</a>
+                <a href="contato.html">Contato</a>
+                <a href="compra.html" class="a-penapolense">Penapolense SHOP</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- sessão de notícias da cidade -->
+    <section class="noticias" id="noticias">
+        <h3>Pulso da Cidade: Notícias Municipais em Destaque</h3>
+
+        <div class="div-noticias">
+            <div class="container-noticias">
+                <div class="img-noticia1"></div>
+                <p>Presidente do Fundo Social participa de encontro regional de municípios</p>
+            </div>
+
+            <div class="container-noticias">
+                <div class="img-noticia2"></div>
+                <p>12 de janeiro: Seminário discute ações de combate ao abuso de crianças e adolescentes</p>
+            </div>
+
+            <div class="container-noticias">
+                <div class="img-noticia3"></div>
+                <p>Capacita Penápolis: Alunos iniciam curso de Auxiliar Administrativo</p>
+            </div>
+
+            <div class="container-noticias">
+                <div class="img-noticia4"></div>
+                <p>27 de janeiro: Mais de 1.500 crianças e adolescentes prestigiam espetáculo teatral</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- sessão de eventos locais -->
+    <section class="eventos">
+        <h3>Esportes em Ação: Notícias e Eventos Esportivos da Cidade</h3>
+
+        <div class="div-eventos">
+            <div class="container-eventos">
+                <div class="img-eventos1" onclick="redirecionarParaSaibaMais()"></div>
+                <p>Basquete 3x3 agita quadra <br> do parque aquático</p>
+                <a class="eventos-saibamais" href="saibabasquete.html" id="basquete">Saiba mais!</a>
+            </div>
+
+            <div class="container-eventos">
+                <div class="img-eventos2" onclick="redirecionarParaSaibaMais2()"></div>
+                <p>Quadra de vôlei de areia é <br> inaugurada no parque Maria Chica</p>
+
+                <a class="eventos-saibamais" href="saibamariachica.html" id="voleiareia">Saiba mais!</a>
+            </div>
+
+            <div class="container-eventos">
+                <div class="img-eventos3" onclick="redirecionarParaSaibaMais3()"></div>
+                <p>Equipe de vôlei masculino <br> garante vaga no estadual</p>
+
+                <a class="eventos-saibamais" href="saibavolei.html" id="voleiequipe">Saiba mais!</a>
+            </div>
+
+            <div class="container-eventos">
+                <div class="img-eventos4" onclick="redirecionarParaLoja()"></div>
+                <p>Penapolense lança nova coleção, inspirando orgulho e paixão</p>
+
+                <a class="comprarbutton" href="compra.html" id="lojacap">Acessar loja</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="govsp-footer">
+            <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+            <img src="assets/img/govsp.png" alt="governo de SP" width="200px"></a>
+        </div>
+
+        <div class="space-div-footer">
+            <p>&copy; Prefeitura municipal de Penápolis 2024. Todos os direitos reservados.</p>
+
+            <div class="redesfooter">
+                <a href="https://twitter.com/Penapolis_SP" target="_blank" title="Siga-me no Twitter">
+                    <i class="fa-brands fa-twitter"></i></a>
+                
+                <a href="https://www.facebook.com/prefeituradepenapolis/?locale=pt_BR" target="_blank" title="Curta minha página no Facebook">
+                    <i class="fa-brands fa-facebook-f"></i></a>
+                
+                <a href="https://wa.me/+5518981665435" target="_blank" title="Entre em contato pelo WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i></a>
+
+                <a href="https://www.instagram.com/rossetti.ferro.e.aco/" target="_blank" title="Siga-me no Instagram">
+                    <i class="fa-brands fa-instagram"></i></a>
+
+                <a href="https://github.com/nwcnai" target="_blank" title="Visite meu perfil no GitHub">
+                    <i class="fa-brands fa-github"></i></a>
+                    
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-p-3b8149252/" target="_blank" title="Conecte-se comigo no LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-- duas divs criadas pra centralizar a class "space-div-footer" no meio do footer
+        foi utilizado o space-between para tal feito! -->
+        <div></div>
+        <div></div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/71c60d6887.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

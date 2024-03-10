@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Penapolense - CAP</title>
+    <link rel="stylesheet" href="assets/css/camisa2013.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="compra.html" class="buttonvoltarloja">Voltar à loja</a>
+
+    <header>
+        <div class="imgescudo"></div>
+
+        <div class="escritasheader">
+            <h2>PENAPOLENSE</h2>
+            <p>LOJA OFICIAL DO <strong>CAP</strong></p>
+        </div>
+    </header>
+
+    <div class="imgbanner"></div>
+
+    <section class="compras">
+        <div class="backgroundcamisas">
+            <h2>Camisa Penapolense</h2>
+            <p class="p-introducao">Modelo I - (2013)</p>
+
+        <div class="container-center">
+                <div class="camisa-modelonovo3"></div>
+
+                <form action="comprafinalizada.html">
+                    <div class="displayblock">
+                        <div>
+                            <label for="tamanho">Escolha o tamanho:</label>
+                            <select id="tamanho" name="tamanho" required>
+                                <option value="" selected disabled>-</option>
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                                <option value="GG">GG</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label for="tamanho">Escolha o sexo:</label>
+                            <select id="sexo" name="sexo" required>
+                                <option value="" selected disabled>-</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+                            </select>
+                        </div>
+    
+                        <label for="cep" required>Informe seu CEP:</label>
+                        <input required type="text" id="cep" name="cep" maxlength="9" placeholder="CEP para entrega" oninput="formatarCEP(this)">
+                    </div>
+
+                    <div class="displayblock" id="precoefrete">
+                        <p class="preco">R$ 129,99</p>
+                        <p class="frete">FRETE GRÁTIS</p>
+                        <hr>
+                    </div>
+                    <button type="submit" class="comprarbutton" href="comprafinalizada.html">Finalizar compra</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+            <a href="https://www.penapolis.sp.gov.br/portal/secretarias/7/esportes-lazer-e-juventude" target="_blank">
+            <img src="assets/img/secretaria.png" alt="secretaria de lazer e juventude" width="180px"></a>
+
+        <p>&copy; Clube Atlético Penapolense 2024. Todos os direitos reservados.</p>
+
+        <a href="https://www.instagram.com/penapolenseoficial/" target="_blank">
+            <img src="assets/img/CAPescudo.png" alt="penapolense-instgram" width="100px"></a>
+    </footer>
+
+    <script>
+        function formatarCEP(input) {
+          let cep = input.value.replace(/\D/g, '');
+      
+          if (cep.length > 5) {
+            cep = cep.substring(0, 5) + '-' + cep.substring(5);
+          }
+      
+          input.value = cep;
+        }
+      </script>
+</body>
+</html>

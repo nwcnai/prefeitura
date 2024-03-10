@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura - Penápolis</title>
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@650&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@430&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header junto de navegações -->
+    <header>
+        <div class="header-div-logo">
+            <a href="index.html">
+                <img src="assets/img/prefeitura.png" alt="brasão prefeitura" class="imgprefeitura"></a>
+        </div>
+
+        <div class="header-div-nav">
+            <nav class="nav-princ">
+                <a href="index.html">Home</a>
+                <a href="administracao.html">Administração</a>
+                <a href="planejamento.html">Planejamento</a>
+                <a href="compra.html" class="a-penapolense">Penapolense SHOP</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="espaco-header-projetos"></div>
+
+<section class="introducao">
+    <h2>Prezado cidadão,</h2>
+    <p>Suas sugestões e reclamações serão bem-vindas e encaminhadas às áreas competentes.</p>
+</section>
+
+<section class="sessao-mapa-e-dados">
+    <div class="todos-dados-esquerda">
+        <p class="entreemcontato">Entre em contato por telefone ou pessoalmente.</p>
+            <div class="dados-esquerda">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Av. Maria Chica, 1400 - Centro - Penápolis / SP - 16300-005</p>
+            </div>
+
+            <div class="dados-esquerda">
+                <i class="fa-solid fa-clock"></i>
+                <p>De segunda a sexta, das 8h às 16h</p>
+            </div>
+
+            <div class="telefoneespacamento">
+                <div class="dados-esquerda">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>(18) 3654-2500</p>
+                </div>
+            </div>
+            <p class="cliquenoicone"><span>*</span> Clique no ícone para copiar a sua informação correspondente.</p>
+    </div>
+
+        <div id="mapa-direita"></div>
+</section>
+
+    <!-- footer -->
+    <footer>
+        <div class="cadastro-email">
+            <h3>Receba informativos gerais</h3>
+            <p>Cadastre seu e-mail para receber as novidades a respeito de nossa cidade.</p>
+
+            <div class="header-div-search">
+                <form action="telasucesso.html">
+                    <input type="email" required placeholder="Insira seu e-mail">
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footerbaixo">
+            <div class="govsp-footer">
+                <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                    <img src="assets/img/govsp.png" alt="governo de SP" width="200px"></a>
+            </div>
+
+            <div class="space-div-footer">
+                <p>&copy; Prefeitura municipal de Penápolis 2024. Todos os direitos reservados.</p>
+    
+                <div class="redesfooter">
+                    <a href="https://twitter.com/Penapolis_SP" target="_blank" title="Siga-me no Twitter">
+                        <i class="fa-brands fa-twitter"></i></a>
+                    
+                    <a href="https://www.facebook.com/prefeituradepenapolis/?locale=pt_BR" target="_blank" title="Curta minha página no Facebook">
+                        <i class="fa-brands fa-facebook-f"></i></a>
+                    
+                    <a href="https://wa.me/+5518981665435" target="_blank" title="Entre em contato pelo WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i></a>
+    
+                    <a href="https://www.instagram.com/rossetti.ferro.e.aco/" target="_blank" title="Siga-me no Instagram">
+                        <i class="fa-brands fa-instagram"></i></a>
+    
+                    <a href="https://github.com/nwcnai" target="_blank" title="Visite meu perfil no GitHub">
+                        <i class="fa-brands fa-github"></i></a>
+                        
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-p-3b8149252/" target="_blank" title="Conecte-se comigo no LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- duas divs criadas pra centralizar a class "space-div-footer" no meio do footer
+    foi utilizado o space-between para tal feito! -->
+            <div></div>
+            <div></div>
+        </div>
+    </footer>
+
+    <!-- kit do font awesome -->
+    <script src="https://kit.fontawesome.com/71c60d6887.js" crossorigin="anonymous"></script>
+
+    <!-- script do mapa e de seu funcionamento -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQclVVZbjzgTUCaXHoO5E5D3Pu-9UhxaU"></script>
+    <script>
+      function initMap() {
+        var coordenadas = {lat: -21.412295, lng: -50.076911};
+  
+        var opcoesMapa = {
+          zoom: 16,
+          center: coordenadas
+        };
+  
+        var mapa = new google.maps.Map(document.getElementById('mapa-direita'), opcoesMapa);
+  
+        var marcador = new google.maps.Marker({
+          position: coordenadas,
+          map: mapa,
+          title: 'Av. Maria Chica, 1400, Centro, Penápolis, SP, 16300-005'
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQclVVZbjzgTUCaXHoO5E5D3Pu-9UhxaU&callback=initMap"></script>
+
+    <!-- clicar no <i> e copiar o texto a frente (<p>)-->
+   <script>
+    const icones = document.querySelectorAll('.dados-esquerda i');
+
+icones.forEach(function(icone) {
+  icone.addEventListener('click', function() {
+    const textoParaCopiar = icone.nextElementSibling.innerText;
+    navigator.clipboard.writeText(textoParaCopiar)
+      .then(function() {
+        alert('Caro indivíduo, seu texto foi copiado para a área de transferência!');
+      })
+      
+      .catch(function(err) {
+        console.error('Erro ao copiar o texto: ', err);
+      });
+  });
+});
+   </script>    
+</body>
+</html>

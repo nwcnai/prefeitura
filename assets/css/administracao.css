@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: lightblue;
+    color: black;
+  }
+
+:root {
+    --extremos: white;
+    --body: #ececec;
+    --titulos: #596179;
+    --azul-logo: #63aaea;
+    --subtitulos: #555;
+}
+
+.nav-princ {
+    margin: 20px;
+}
+
+.imgprefeitura {
+    margin-left: 20px;
+}
+
+/* configurando o background do site */
+body {
+    background-color: var(--body);
+}
+
+/* configurando - header */
+header {
+    background-color: var(--extremos);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 0px 7px #000000c0;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.a-penapolense {
+    color: rgb(131, 131, 131);
+}
+
+.a-penapolense:hover {
+    color: black;
+}
+
+.header-div-logo img:hover {
+    cursor: pointer;
+}
+
+nav a {
+    transition: all 0.7s;
+
+    font-size: 18px;
+    text-decoration: none;
+    padding: 13px;
+    color: var(--azul-logo);
+}
+
+nav a:hover {
+    transition: all 0.3s;
+
+    cursor: pointer;
+    color: var(--titulos);
+}
+
+.header-div-logo, .header-div-search {
+    margin: 20px 25px;
+}
+
+.header-div-search input[type="email"], .header-div-search input[type="search"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid var(--extremos);
+    border-radius: 4px;
+    background-color: var(--body);
+    color: var(--titulos);
+}
+
+.header-div-search input[type="email"]:focus, .header-div-search input[type="search"]:focus {
+    border-color: var(--azul-logo);
+    outline: none;
+    box-shadow: 0 0 4px #63aaea80;
+}
+
+.header-div-search button[type="submit"] {
+    cursor: pointer;
+
+    background-color: var(--azul-logo);
+    color: var(--extremos);
+    padding: 8px 16px;
+
+    border: none;
+    border-radius: 4px;
+}
+
+/* configurando - prefeito e vice-prefeito */
+.governancah2 {
+    margin-top: 180px !important;
+}
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 33px;
+
+    color: var(--titulos);
+}
+
+.principais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 0px 30px;
+}
+
+.div-principais {
+background-color: var(--extremos);
+border-radius: 20px;
+text-align: center;
+padding: 30px;
+}
+
+.fotoprefeito, .fotovice,
+.vereador1, .vereador2, .vereador3, .vereador4,.vereador5, .vereador6, .vereador7, .vereador8,
+.vereador9, .vereador10, .vereador11, .vereador12, .vereador13 {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 20px !important; /* coloquei important pois em baixo eu declaro margin auto */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto; /* inserido aqui pra centralizar a div que contém a foto de cada político */
+}
+
+.fotoprefeito, .fotovice {
+    border-radius: 300px;
+    transition: all 0.5s;
+}
+
+.fotoprefeito {
+    background-image: url(../img/prefeito.jpg);
+}
+
+.fotovice {
+    background-image: url(../img/viceprefeita.jpg);
+    background-position: center;
+}
+
+.fotoprefeito:hover {
+    background-image: url(../img/prefeitocaique2.jpg);
+    transition: all 0.5s;
+}
+
+.fotovice:hover {
+    background-image: url(../img/viceprefeita2.jpg);
+    transition: all 0.5s;
+}
+
+.nome {
+font-size: 18px;
+}
+
+.principais button, .vereadores button {
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+
+    padding: 7px 40px;
+    color: white;
+    background-color: var(--titulos);
+}
+
+/* configurando - vereadores */
+
+.partido {
+    color: var(--subtitulos);
+}
+
+.vereadores, .outrosvereadores {
+    display: grid;
+    gap: 30px;
+    margin: 0px 30px !important;
+
+}
+
+.vereadores {
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.outrosvereadores {
+    margin-top: 30px !important;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vereador1 {
+    background-image: url(../img/ivan.jpg);
+}
+
+.vereador2 {
+    background-image: url(../img/julio.jpg);
+}
+
+.vereador3 {
+    background-image: url(../img/jandaia.jpg);
+}
+
+.vereador4 {
+    background-image: url(../img/altair.jpg);
+}
+
+.vereador5 {
+    background-image: url(../img/bruno.jpg);
+}
+
+.vereador6 {
+    background-image: url(../img/batata.jpg);
+}
+
+.vereador7 {
+    background-image: url(../img/isanoel.jpg);
+}
+
+.vereador8 {
+    background-image: url(../img/cabeça.jpg);
+}
+
+.vereador9 {
+    background-image: url(../img/leticia.jpg);
+}
+
+.vereador10 {
+    background-image: url(../img/nelson.jpg);
+}
+
+.vereador11 {
+    background-image: url(../img/paulinho.jpg);
+}
+
+.vereador12 {
+    background-image: url(../img/rodolfo.jpg);
+}
+
+.vereador13 {
+    background-image: url(../img/donavilma.jpg);
+}
+
+.contato-vereadores {
+    padding: 9px 4px;
+    margin-top: 20px;
+
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato-vereadores i {
+    color: var(--subtitulos);
+    margin: 0px 10px;
+}
+
+.contato-vereadores i:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.contato-saibamais {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-saibamais a {
+    color: var(--subtitulos);
+    text-decoration: none;
+    margin-top: -37px;
+}
+
+/* configurando - footer */
+footer {
+    margin-top: 70px;
+    background-color: var(--extremos);
+    box-shadow: 0px -1px 7px #000000c0;
+    padding: 13px;
+}
+
+.cadastro-email h3 {
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.cadastro-email p {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    color: var(--subtitulos);
+} 
+
+.cadastro-email {
+    text-align: center;
+}
+
+.header-div-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    margin: 12px 0px;
+}
+
+.footerbaixo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.govsp-footer {
+    justify-self: flex-start;
+}
+
+.space-div-footer {
+    text-align: center;
+    justify-self: center;
+}
+
+footer p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+    
+        color: var(--titulos);
+}
+
+.redesfooter {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redesfooter i {
+    transition: all 0.2s;
+
+    font-size: 28px;
+    color: var(--azul-logo);
+
+}
+
+.redesfooter i:hover {
+    transition: all 0.4s;
+    color: black;
+}
+
+.btn-cad {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 6px 15px;
+    background-color: var(--azul-logo);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}

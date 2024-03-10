@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: lightblue;
+    color: black;
+  }
+
+:root {
+    --extremos: white;
+    --body: #ececec;
+    --titulos: #596179;
+    --azul-logo: #63aaea;
+    --subtitulos: #555;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body);
+}
+
+
+/* header: */
+header {
+    padding: 15px;
+    background-color: var(--extremos);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 7px #000000c0;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header-div-logo img:hover {
+    cursor: pointer;
+}
+
+.nav-princ {
+    margin: 20px;
+}
+
+.imgprefeitura {
+    margin-left: 20px;
+}
+
+nav a {
+    transition: all 0.7s;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 13px;
+    color: var(--azul-logo);
+    margin: 10px;
+}
+
+nav a:hover {
+    transition: all 0.3s;
+    cursor: pointer;
+    color: var(--titulos);
+}
+
+.buttonvoltarhome {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+
+    transition: all 0.3s;
+}
+
+.buttonvoltarhome:hover{
+    background-color: rgb(211, 2, 2);
+    transition: all 0.3s;
+    color: white;
+}
+
+.a-penapolense {
+    color: rgb(131, 131, 131);
+}
+
+.a-penapolense:hover {
+    color: black;
+}
+
+.img-noticia {
+    height: 330px;
+    background-size: cover;
+    background-position: center -180px;
+    background-image: url(../img/eventos1hover.jpg);
+    box-shadow: 0px 0px 7px #000000c0;
+}
+
+/* noticia: */
+.container-noticia {
+    margin-top: 110px;
+}
+
+.titulo-noticia {
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.autor-noticia {
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.nomeautor {
+    color: red;
+}
+
+.data-noticia {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.descricao-noticia {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    width: 90%;
+    margin-left: 60px;
+}
+
+.escritas {
+    text-align: center;
+}
+
+/* footer: */
+footer {
+    margin-top: 50px;
+    background-color: var(--extremos);
+    box-shadow: 0px -1px 7px #000000c0;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.govsp-footer {
+    justify-self: flex-start;
+}
+
+.space-div-footer {
+    text-align: center;
+    justify-self: center;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: var(--titulos);
+}
